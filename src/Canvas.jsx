@@ -37,7 +37,10 @@ function Canvas({details}){
     }, [index]);
 
     return(
-        <canvas ref={userRef}
+        <canvas
+        data-scroll
+        data-scroll-speed={Math.random().toFixed(1)}
+        ref={userRef}
         className='absolute'
          id="canvas"
          style={{width: `${size*1.8}px`, height: `${size*1.8}px`, top: `${top}%`, left: `${left}%`, zIndex: `${zIndex}`}}
