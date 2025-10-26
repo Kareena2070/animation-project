@@ -6,9 +6,9 @@ import LocomotiveScroll from 'locomotive-scroll';
 
 
 function App(){
-  useEffect(()=>{
-    const locomotiveScroll = new LocomotiveScroll();
-  },[]);
+  // useEffect(()=>{
+  //   const locomotiveScroll = new LocomotiveScroll();
+  // },[]);
 
   return(<>
     <div className="w-full relative z-[1] min-h-screen  font-['Helvetica_Now_Display']">
@@ -16,7 +16,7 @@ function App(){
         <Canvas details={item} key={index}/>
       ))}
      
-      <div className='w-full h-screen text-white'>
+      <div className='w-full h-screen text-white relative z-[1]' >
         <nav className='w-full flex items-center justify-between p-8'>
           <div className='brand text-2xl font-regular'>thirtysixstudios</div>
           <div className='links flex gap-10'>
@@ -42,12 +42,12 @@ function App(){
       </div>
     </div>
 
-    <div className="w-full relative z-[2] min-h-screen  font-['Helvetica_Now_Display'] text-white  mt-[20rem]">
+    <div className="w-full relative z-[2] min-h-screen  font-['Helvetica_Now_Display'] text-white  ">
       {data[1].map((item, index) => (
         <Canvas details={item} key={index}/>
       ))}
 
-      <div className='textcontainer w-full px-[20%] flex'>
+      <div className='textcontainer w-full px-[20%] flex relative z-[1] justify-center align-center gap-20 mt-40'>
         <div className='text w-[50%]'>
           <h3 lassName='text-4xl leading-[1.5]'>01 --- WHAT WE DO</h3>
         </div>
@@ -60,10 +60,19 @@ function App(){
       </div>
     </div>
 
-    <div className="w-full relative z-[1] min-h-screen  font-['Helvetica_Now_Display'] text-white  mt-[10rem]">
-      <p lassName='text-md w-[50%] mt-10 front-regular'>OUR SERVICES</p>
-      <h3>Weprovideyouwithcaptivatingdesign,interactiveanimations,reliablecode,andimmaculateprojectcoordination.Whetheryouneedacampaignbuiltfromscratchorassistanceataspecificphase,we’vegotyoucovered.</h3>
+    <div className="w-full relative z-[1] min-h-screen  font-['Helvetica_Now_Display'] text-white justify-center align-center gap-20 mt-[-1rem]">
+      {data[2].map((item, index) => (
+        <Canvas details={item} key={index}/>
+      ))}
+      <div className=" w-full pl-10 pr-10">
+      <p lassName='text-5xl  uppercase'>OUR SERVICES</p>
+      <h3 className='text-5xl leading-relaxed w-full'>We provide you with captivating design, interactive animations, reliablecode, and immaculate project coordination.
+      
+      Whether you need a campaign built from scratch or assistance at a specific phase, we've got you covered.</h3>
+      </div>
     </div>
+
+    
 
     
     
