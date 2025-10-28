@@ -144,8 +144,8 @@ function App() {
        <Canvas details={item} key={index}/>
      ))}
      <div className=" w-full pl-10 pr-10 ">
-       <h1 className='text-6xl leading-relaxed  uppercase'>OUR SERVICES</h1>
- <h3 className='text-4xl leading-relaxed w-full'>We provide you with captivating design, interactive animations, reliable code, and immaculate project coordination.
+        <h1 className='text-6xl leading-relaxed  uppercase'>OUR SERVICES</h1>
+        <h3 className='text-4xl leading-relaxed w-full'>We provide you with captivating design, interactive animations, reliable code, and immaculate project coordination.
       
        Whether you need a campaign built from scratch or assistance at a specific phase, we've got you covered.</h3>
      </div>
