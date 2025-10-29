@@ -1,0 +1,50 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+#box1{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 20px;
+    animation: moveBox 4s infinite alternate;
+}
+
+#box2{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    margin: 20px;
+    animation: moveBox 2s infinite alternate;
+}
+
+#box3{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    margin: 20px;
+    animation: moveBox 6s infinite alternate;
+}
+
+#box4{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    margin: 20px;
+    animation: moveBox 3s infinite alternate;
+}
+
+p{
+    font-size: 34px;
+    margin: 20px 0;
+    animation: fadeIn 4s infinite alternate;
+}
