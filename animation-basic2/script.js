@@ -44,16 +44,30 @@ gsap.from (".page2 h2", {
 })
 
 gsap.from(".page3 #box", {
-    rotation:360,
-    scale:1,
+    scale:3,
     duration:2,
     rotation:720,
+    borderRadius: "50%",
     scrollTrigger: {
         trigger: ".page3 #box",
         scroller: "body",
-        start: "top 60%",
+        start: "top 30%",
         end: "top 10%",
         scrub: 2,
         markers: true,
+    }
+})
+
+gsap.to(".page4 p", {
+    transform: "translateX(-150%)",
+    scrollTrigger: {
+        trigger: ".page4",
+        scroller: "body",
+        markers: true,
+        start: "top 0%",
+        end: "top -150%",
+         end: "bottom 150%",
+        scrub: 2,
+        pin: true,
     }
 })
