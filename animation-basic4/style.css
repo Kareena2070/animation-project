@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Ensure full-height containers work: set html/body to 100% and use viewport units for main */
+html, body {
+    height: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cursor{
+    height: 20px;
+    width: 20px;
+    background-color: rgb(29, 143, 241);
+    border-radius: 50%;
+    /* position: absolute;   not using absolute because we want to make multiple page, if we use absolute then it will move only one page/div*/
+    position: fixed;
+    font-size: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+}
+
+#imgae{
+    height: 500px;
+    width: 1000px;
+    background-color: white;
+    margin: auto;
+    margin-top: 250px;
+    position: relative;
+}
+
+#imgae img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#overlay{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    /* top: 0;
+    left: 0;
+    pointer-events: none; */
+    z-index: 10;
+}
